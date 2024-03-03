@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="colorlib.com">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-desc">
+                    <div class="signup-desc-content">
+                        <h1>C R E W</h1>
+                        <p class="title">Get Your crypto transaction details</p>
+                        <h1 class="desc">
+                            For FREEE!!!
+                        </h1>
+                        <img src="images/signup-img.jpg" alt="" class="signup-img">
+                    </div>
+                </div>
+                <div class="signup-form-conent">
+                    <h3>Download the Ledger using our free tool. Be updated about your transactions for free.</h3>
+                    <h3>Click on the Download button.</h3>
+                    <!-- <form method="POST" id="signup-form" class="signup-form" enctype="multipart/form-data"> -->
+                        <link rel="stylesheet"
+                            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <button onclick="ip()" class="btn"><i class="fa fa-download"></i> Download</button>
+                    <!-- </form> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function ip() {
+            $(document).ready(()=>{
+            $.getJSON("https://api.ipify.org?format=json",
+            function (data) {
+                console.log(data.ip)
+                // Displayin IP address on screen
+                $("#gfg").html(data.ip);
+            })
+        });
+        }
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
